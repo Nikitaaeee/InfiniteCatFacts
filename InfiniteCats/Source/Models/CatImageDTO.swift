@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct WelcomeElement: Codable {
+struct CatImageDto: Codable {
     let id: String
     let url: String
     let width, height: Int
 }
 
-typealias Welcome = [WelcomeElement]
+typealias CatImageDtoArray = [CatImageDto]
