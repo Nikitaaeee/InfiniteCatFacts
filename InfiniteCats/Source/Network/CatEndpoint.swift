@@ -13,20 +13,19 @@ enum CatEndpoint {
 }
 
 extension CatEndpoint: RequestBuilder {
-    
     var urlRequest: URLRequest {
         switch self {
         case .catImage:
             guard let url = URL(string: "https://api.thecatapi.com/v1/images/search")
                 else {preconditionFailure("Invalid URL format")}
-            var request = URLRequest(url: url)
+            let request = URLRequest(url: url)
             
             return request
             
         case .catFact:
             guard let url = URL(string: "https://cat-fact.herokuapp.com/facts/random")
                 else {preconditionFailure("Invalid URL format")}
-            var request = URLRequest(url: url)
+            let request = URLRequest(url: url)
             
             return request
         }

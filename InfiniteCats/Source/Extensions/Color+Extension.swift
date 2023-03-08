@@ -1,5 +1,5 @@
 //
-//  Color + Extension.swift
+//  Color+Extension.swift
 //  InfiniteCats
 //
 //  Created by Nikita Kirshin on 08.03.2023.

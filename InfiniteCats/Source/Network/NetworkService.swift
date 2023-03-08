@@ -15,6 +15,9 @@ protocol NetworkServiceProtocol {
 }
 
 struct NetworkService: NetworkServiceProtocol {
+    
+    //MARK: - Generic Request
+    
     func request<T>(with builder: RequestBuilder) -> AnyPublisher<T, APIError> where T: Decodable {
         let decoder = JSONDecoder()
         return URLSession.shared
@@ -40,10 +43,11 @@ struct NetworkService: NetworkServiceProtocol {
             .eraseToAnyPublisher()
     }
     
+    //MARK: - Image Loader
+
     func requestImage(with url: String) -> AnyPublisher<UIImage, APIError> {
         guard let url = URL(string: url)
         else {
-            print(url)
             return Fail(error: .decodingError)
                 .eraseToAnyPublisher()
         }
@@ -53,7 +57,6 @@ struct NetworkService: NetworkServiceProtocol {
             .receive(on: DispatchQueue.main)
             .mapError { _ in .unknown }
             .flatMap { data, response -> AnyPublisher<UIImage, APIError> in
-                print(data)
                 if let image = UIImage(data: data) {
                     return Just(image)
                         .mapError {_ in .decodingError }

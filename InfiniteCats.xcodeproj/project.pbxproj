@@ -20,7 +20,7 @@
 		48B019A329B8E19200CA311A /* CatFactDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B019A229B8E19200CA311A /* CatFactDTO.swift */; };
 		48B019A529B8E1A000CA311A /* CatImageDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B019A429B8E1A000CA311A /* CatImageDTO.swift */; };
 		48B019A729B8EABA00CA311A /* CatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B019A629B8EABA00CA311A /* CatCellView.swift */; };
-		48B019AA29B8EFC000CA311A /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B019A929B8EFC000CA311A /* Color + Extension.swift */; };
+		48B019AA29B8EFC000CA311A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B019A929B8EFC000CA311A /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		48B019A229B8E19200CA311A /* CatFactDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactDTO.swift; sourceTree = "<group>"; };
 		48B019A429B8E1A000CA311A /* CatImageDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageDTO.swift; sourceTree = "<group>"; };
 		48B019A629B8EABA00CA311A /* CatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCellView.swift; sourceTree = "<group>"; };
-		48B019A929B8EFC000CA311A /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		48B019A929B8EFC000CA311A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,7 @@
 		48B019A829B8EFB300CA311A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				48B019A929B8EFC000CA311A /* Color + Extension.swift */,
+				48B019A929B8EFC000CA311A /* Color+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,7 +240,7 @@
 				48B019A529B8E1A000CA311A /* CatImageDTO.swift in Sources */,
 				4851EC2B29A113C60008FEAE /* RequestBuilder.swift in Sources */,
 				48B019A729B8EABA00CA311A /* CatCellView.swift in Sources */,
-				48B019AA29B8EFC000CA311A /* Color + Extension.swift in Sources */,
+				48B019AA29B8EFC000CA311A /* Color+Extension.swift in Sources */,
 				4851EC0829A106270008FEAE /* InfiniteCatsApp.swift in Sources */,
 				4851EC2D29A113F60008FEAE /* APIError.swift in Sources */,
 			);

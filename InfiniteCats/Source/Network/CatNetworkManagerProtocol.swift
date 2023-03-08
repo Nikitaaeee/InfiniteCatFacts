@@ -11,11 +11,12 @@ import UIKit
 
 protocol CatNetworkManagerProtocol {
     var networkService: NetworkServiceProtocol { get }
-    
     func getCatImageURL() -> AnyPublisher<Welcome, APIError>
     func getCatImage(url:String) -> AnyPublisher<UIImage, APIError>
     func getCatFact() -> AnyPublisher<CatFactDTO, APIError>
 }
+
+//MARK: - Default Implementation
 
 extension CatNetworkManagerProtocol {
     func getCatImageURL() -> AnyPublisher<Welcome, APIError> {

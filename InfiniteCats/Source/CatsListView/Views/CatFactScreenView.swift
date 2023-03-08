@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct CatFactScreenView: View {
+    
+    //MARK: - Properties
+    
     @ObservedObject var viewModel = CatsCellViewModel()
-//    @State private var zoomed: Bool = false
-    @State private var isLoading = true
     private var url: String = ""
+    
+    //MARK: - Views
     
     var body: some View {
         NavigationView {
@@ -23,14 +26,9 @@ struct CatFactScreenView: View {
                     )
                     .padding(.horizontal, 10)
                 }
-                if isLoading {
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle())
-                }
                 Button(action: {
-                    isLoading = true
-                    viewModel.getCatImageURL()
-                    viewModel.getCatFact()
+                    viewModel.isLoading = true
+                    viewModel.fetchCatInfo()
                 }) {
                     Text("Next fact")
                         .foregroundColor(.white)
@@ -41,13 +39,12 @@ struct CatFactScreenView: View {
             }.navigationTitle("Random Cat Facts")
         }
         .onAppear() {
-            isLoading = true
-            viewModel.getCatImageURL()
-            viewModel.getCatFact()
-            isLoading = false
+            viewModel.fetchCatInfo()
         }
     }
 }
+
+//MARK: - PreviewProvider
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

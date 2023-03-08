@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct CatCellView: View {
+    
+    //MARK: - Properties
+    
     private var catImage: UIImage?
     private var catFact: String?
     
+    //MARK: - Lifecycle
     
     init(catImage: UIImage?, catFact: String?) {
         self.catImage = catImage
         self.catFact = catFact
     }
+    
+    //MARK: - Views
     
     var body: some View {
         VStack {

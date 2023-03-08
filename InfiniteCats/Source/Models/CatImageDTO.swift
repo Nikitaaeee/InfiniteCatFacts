@@ -7,10 +7,6 @@
 
 import Foundation
 
-//struct CatImageDTO: Decodable {
-//    let id: String
-//    let url: String
-//}
 struct WelcomeElement: Codable {
     let id: String
     let url: String

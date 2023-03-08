@@ -11,4 +11,7 @@ enum APIError: Error {
     case decodingError
     case httpError(Int)
     case unknown
+    case invalidURL
+    case invalidResponse
+    case networkError(any Error)
 }
