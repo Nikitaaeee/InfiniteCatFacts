@@ -16,7 +16,7 @@ The app fetches the image URL first, and then fetches the image itself once the 
 
 Gif of the app main screen
 
-![2023-03-09 11 46 07](https://user-images.githubusercontent.com/75203988/223968397-f5bd84cb-aaea-4cde-b0a0-28adbb53fa6e.gif)
+![2023-03-09 11 57 08](https://user-images.githubusercontent.com/75203988/223971237-413df3f7-df8b-4e0f-b192-922020cb88ff.gif)
 
 ### Technologies Used
 
