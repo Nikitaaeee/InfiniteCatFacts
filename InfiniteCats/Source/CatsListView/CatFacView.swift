@@ -21,7 +21,7 @@ struct CatFactView: View {
                 
                 BackgroundView()
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     VStack(spacing: Constants.verticalSpacing) {
                         
                         Spacer()
