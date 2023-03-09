@@ -1,5 +1,5 @@
 //
-//  CatsCellViewModel.swift
+//  CatFactViewModel.swift
 //  InfiniteCats
 //
 //  Created by Nikita Kirshin on 18.02.2023.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-final class CatsCellViewModel: ObservableObject, CatNetworkManagerProtocol {
+final class CatFactViewModel: ObservableObject, CatNetworkManagerProtocol {
     
     //MARK: - Properties
     
@@ -24,15 +24,16 @@ final class CatsCellViewModel: ObservableObject, CatNetworkManagerProtocol {
         self.networkService = networkService
     }
     
+    //MARK: - Methods
+    
     func fetchCatInfo() {
         getCatImageURL()
-        getCatFact()
     }
 }
 
 //MARK: - Private
 
-private extension CatsCellViewModel {
+private extension CatFactViewModel {
     func getCatImageURL() {
         let cancellable = self.getCatImageURL()
             .sink(receiveCompletion: { result in
@@ -44,6 +45,7 @@ private extension CatsCellViewModel {
                 }
             }) { [weak self] model in
                 self?.getCatImage(url: model[0].url)
+                self?.getCatFact()
             }
         cancellables.insert(cancellable)
     }

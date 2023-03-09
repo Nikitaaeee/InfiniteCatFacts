@@ -13,4 +13,4 @@ struct CatImageDto: Codable {
     let width, height: Int
 }
 
-typealias CatImageDtoArray = [CatImageDto]
+typealias CatImageDtoResponse = [CatImageDto]

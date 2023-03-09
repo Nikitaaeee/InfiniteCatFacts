@@ -11,7 +11,7 @@ import UIKit
 
 protocol CatNetworkManagerProtocol {
     var networkService: NetworkServiceProtocol { get }
-    func getCatImageURL() -> AnyPublisher<CatImageDtoArray, APIError>
+    func getCatImageURL() -> AnyPublisher<CatImageDtoResponse, APIError>
     func getCatImage(url:String) -> AnyPublisher<UIImage, APIError>
     func getCatFact() -> AnyPublisher<CatFactDTO, APIError>
 }
@@ -19,7 +19,7 @@ protocol CatNetworkManagerProtocol {
 //MARK: - Default Implementation
 
 extension CatNetworkManagerProtocol {
-    func getCatImageURL() -> AnyPublisher<CatImageDtoArray, APIError> {
+    func getCatImageURL() -> AnyPublisher<CatImageDtoResponse, APIError> {
         return networkService.request(with: CatEndpoint.catImage)
             .eraseToAnyPublisher()
     }
