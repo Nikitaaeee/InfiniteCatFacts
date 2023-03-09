@@ -11,7 +11,7 @@ import SwiftUI
 struct InfiniteCatsApp: App {
     var body: some Scene {
         WindowGroup {
-            CatFactScreenView()
+            CatFactView()
         }
     }
 }
