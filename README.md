@@ -25,3 +25,5 @@ Gif of the app main screen
 ⋅ Combine
 
 ⋅ URLSession
+
+#### Image credits belong to their respective owners ©.
