@@ -1,5 +1,5 @@
 # InfiniteCatFacts
-### SwiftUI + MVVM (Combine)
+### Random CatImages and Facts app using SwiftUI+Combine (MVVM)
 
 InfiniteCatFacts is a simple iOS app that displays a random cat fact and an image of a cat. 
 
@@ -25,3 +25,5 @@ Gif of the app main screen
 ⋅ Combine
 
 ⋅ URLSession
+
+#### Image credits belong to their respective owners ©.
