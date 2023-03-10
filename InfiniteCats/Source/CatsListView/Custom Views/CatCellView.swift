@@ -58,8 +58,8 @@ struct CatCellView: View {
 
 private extension CatCellView {
     enum Constants {
-        static let defaultImageName = "eye"
-        static let defaultText = "No Cat Fact"
+        static let defaultImageName = "defaultCat"
+        static let defaultText = "loading..."
         static let imageHeight: CGFloat = 300
         static let cornerRadius: CGFloat = 16
         static let horizontalPadding: CGFloat = 10
