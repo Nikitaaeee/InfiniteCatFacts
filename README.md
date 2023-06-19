@@ -20,10 +20,6 @@ Gif of the app main screen
 
 ### Technologies Used
 
-⋅ SwiftUI
-
-⋅ Combine
-
-⋅ URLSession
+`SwiftUI` `Combine` `URLSession`
 
 #### Image credits belong to their respective owners ©.
